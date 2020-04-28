@@ -2,7 +2,7 @@ $(".post-wrapper").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     nextArrow: $('.next'),
     prevArrow: $('.prev'),
     responsive: [
@@ -10,24 +10,26 @@ $(".post-wrapper").slick({
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 4,
                 infinite: true,
                 dots: true
             }
         },
         {
-            breakpoint:600,
+            breakpoint:900,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
+              
             }
         },
         {   
-         breakpoint: 480,
+         breakpoint: 530,
          settings: {
              slidesToShow: 1,
              slidesToScroll: 1
-         }   
+            
+            }   
         },
     ]
 });
